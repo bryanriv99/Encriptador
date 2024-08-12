@@ -194,7 +194,7 @@ header {
 
 .footer {
     background-color: var(--color-secundario);
-    padding: 4px;
+    padding: 10px;
     color: white;
     text-align: center;
     font-family: "Inter", sans-serif;
