@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="assets/Logo.png" alt="Logo de Alura">
+    </header>
+    <main class="padre">
+        <section class="izquierdo">
+            <form method="post" >
+                <label for="valorUsuario"></label>
+                <textarea id="valorUsuario" class="input_texto" name="texto" pattern="[a-z ]+" title="Solo letras minúsculas y sin acentos" placeholder="Ingrese el texto aqui" required=""></textarea>
+                <div id="mensaje-error" class="mensaje-advertencia hidden"></div> 
+                <div class="informacion">
+                    <i class="bi bi-exclamation-circle-fill"></i>
+                    <img src="assets/bi_exclamation-circle-fill.png" alt="exclamacion">
+                    <span class="aviso_texto">Solo letras minúsculas y sin acentos</span>
+                </div>
+                <div class="botones1">
+                    <button class="boton1" type="button" onclick="encriptarTexto()">Encriptar</button>
+                    <button class="boton2" type="button" onclick="desencriptarTexto()">Desencriptar</button>
+                </div>
+            </form>
+        </section>
+        <section class="derecho">
+            <div class="contenedor">
+                <img class="imagen" src="assets/Muñeco.png" alt="Imagen">
+                <p class="mensaje1">Ningún mensaje fue <br> encontrado</p>
+                <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <div class="con-texto hidden">
+                <p id="texto-encriptado"></p>
+                <div class="botoncopiar">
+                    <button class="copiar" onclick="copiarTexto()">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    </footer>
+    <script src="encriptador.js"></script>
+
+
+</body></html>
